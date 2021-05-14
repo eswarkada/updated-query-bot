@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8b8888a6;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+#d011{
+    position: fixed;
+    font-size: 30px;
+    left: 30%;
+    top: 35%;
+    text-align: center;
+}
+
+
+/*.chat-button{
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+    background: dodgerblue;
+    border-radius: 10px;
+    color: white;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: opacity 0.3s;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}*/
+
+#img01{
+    position: fixed;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+    /*border-radius:40px;*/
+    border-bottom-right-radius: 50px ;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 65px;
+    height: 64px;
+    margin-top: 43%;
+    margin-left: 41%;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+#img01:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*.chat-button:hover, .submit:hover{
+    opacity: 1;
+}*/
+
+.chat-window{
+    /*display: none;*/
+    position: fixed;
+    bottom:90px;
+    right:130px;
+    height: 630px;
+    width: 400px;
+    background-color:  #9999ff;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /*border-bottom-right-radius: 50px;*/
+    /*transform: scaleY(0);*/
+    transform: rotateX(90deg);
+    
+}
+
+.show{
+    display: flex;
+    transition: all 0.6s ease-out;
+    /*transform: scaleY(1);*/
+    transform: rotateX(10deg);
+    
+}
+
+
+#chathead{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 2px;
+}
+#chatbody{
+    width: 100%;
+    margin-top: 1px;
+    height: 100%;
+    border: 2px solid #4f8bf3;
+    background-color: rgba(255, 255, 255, 0.89);
+    overflow: auto;
+    border-radius: 4px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    
+
+
+}
+#chatbody::-webkit-scrollbar {
+  display: none;
+}
+
+
+h2{
+    margin-top: 6px;
+    margin-left: center;
+    color: white;
+    
+}
+
+#userinput{
+    width: 100%;
+    outline: none;
+    border:none;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 3px;
+   
+    border: 2px solid #4f8bf3;
+}
+#botqueries{
+
+    float: left;
+    margin-left: 5px;
+    display: table;
+    clear: both;
+    word-break: break-all;
+    margin-right: 40px;
+
+}
+#timestamp{
+    padding: 3px;
+    color: blue;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: table;
+    clear: both;
+    word-break: break-all;
+
+    
+}
+
+#bot1{
+    padding: 3px;
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: table;
+    clear: both;
+    word-break: break-all;
+    background-color: #1ceb26;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+#botbutton{
+
+   font-family: calibri;
+   font-size: 15px;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: white;
+   /*border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;*/
+   display: inline;
+   margin-right: 10px;
+   margin-bottom: 10px; 
+   cursor: pointer;
+}
+
+#botbutton:hover{
+    color: white;
+    background-color: #1ceb26;
+}
+
+#userqueries{
+    margin-left: 40px;
+    float: right;
+    margin-right: 5px;
+    display: table;
+    clear: both;
+    word-break: break-all;
+
+
+}
+#user1{
+   
+    padding: 6px;
+    font-size: 15px;
+    background-color: #1ceb26;
+    color: white;
+    font-family: Snell Roundhand, cursive;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+@media (max-width:500px){
+
+    .chat-window{
+        bottom: 120px;
+        right:10%;
+        width: 80vw;
+    }
+}
+
+#submit{
+    
+    width: 100%;
+    outline: none;
+    border:none;
+    padding: 10px;
+    border: 2px solid #4f8bf3;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-color:  #ff3300;
+    border: 2px solid #4f8bf3;
+    
+}
